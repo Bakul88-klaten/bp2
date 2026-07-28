@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const benefits = [
   'Konsultasi gratis tanpa komitmen',
-  'Pelayanan personal langsung dari Rio',
+  'Pelayanan personal langsung dari Tono',
   'Bantuan proses klaim hingga selesai',
 ]
 
@@ -15,7 +15,7 @@ const whatsappNumber = '628131556592'
 
 export default function Hero() {
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
+    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
   }
 
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
           alt="Konsultasi Asuransi Profesional"
           fill
           className="object-cover object-center"
-          priority
+          pTonority
         />
       </div>
 
@@ -59,7 +59,7 @@ export default function Hero() {
               className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-4 md:mb-6"
             >
               Halo, Saya{' '}
-              <span className="text-primary">Rio Mardiansyah</span>
+              <span className="text-primary">Tono Mardiansyah</span>
             </motion.h1>
 
             <motion.p
