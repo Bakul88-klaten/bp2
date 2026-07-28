@@ -305,7 +305,7 @@ export default function Contact() {
                     </div>
 
                     <p className="text-xs text-muted-foreground text-center">
-                      Dengan mengirim pesan, Anda menyetujui untuk dihubungi oleh Tono Mardiansyah.
+                      Dengan mengirim pesan, Anda menyetujui untuk dihubungi oleh Tono.
                     </p>
                   </form>
                 )}
