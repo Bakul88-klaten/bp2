@@ -96,7 +96,7 @@ export default function KalkulatorKebakaranPopup({ isOpen, onClose }: Kalkulator
       ? hasil.perluasan.join(', ') 
       : 'Tidak ada'
 
-    const pesan = `Halo Rio, saya tertarik untuk mengasuransikan properti saya dengan detail:
+    const pesan = `Halo Tono, saya tertarik untuk mengasuransikan properti saya dengan detail:
 
 *Nilai Bangunan:* Rp ${hasil.bangunan.toLocaleString('id-ID')}
 *Nilai Isi Bangunan:* Rp ${hasil.isi.toLocaleString('id-ID')}
