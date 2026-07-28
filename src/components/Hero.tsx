@@ -11,7 +11,7 @@ const benefits = [
   'Bantuan proses klaim hingga selesai',
 ]
 
-const whatsappNumber = '628131556592'
+const whatsappNumber = '6287781658231'
 
 export default function Hero() {
   const handleWhatsApp = () => {
