@@ -25,8 +25,8 @@ const contactInfo = [
     icon: MessageCircle,
     title: 'WhatsApp',
     content: whatsappDisplay,
-    subContent: 'Chat langsung dengan Rio',
-    action: `https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`,
+    subContent: 'Chat langsung dengan Tono',
+    action: `https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`,
   },
   {
     icon: Phone,
@@ -91,7 +91,7 @@ export default function Contact() {
   }
 
   const handleWhatsAppDirect = () => {
-    const message = `Halo Rio, saya ingin konsultasi tentang asuransi.\n\nNama: ${formData.nama || '-'}\nEmail: ${formData.email || '-'}\nTelepon: ${formData.telepon || '-'}\nPesan: ${formData.pesan || '-'}`
+    const message = `Halo Tono, saya ingin konsultasi tentang asuransi.\n\nNama: ${formData.nama || '-'}\nEmail: ${formData.email || '-'}\nTelepon: ${formData.telepon || '-'}\nPesan: ${formData.pesan || '-'}`
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank')
   }
 
@@ -168,7 +168,7 @@ export default function Contact() {
               <Button 
                 variant="secondary" 
                 className="w-full bg-white text-green-600 hover:bg-white/90"
-                onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')}
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')}
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Chat Sekarang
@@ -211,7 +211,7 @@ export default function Contact() {
                         Kirim Pesan Lain
                       </Button>
                       <Button
-                        onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')}
+                        onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')}
                         className="bg-green-500 hover:bg-green-600"
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
@@ -305,7 +305,7 @@ export default function Contact() {
                     </div>
 
                     <p className="text-xs text-muted-foreground text-center">
-                      Dengan mengirim pesan, Anda menyetujui untuk dihubungi oleh Rio Mardiansyah.
+                      Dengan mengirim pesan, Anda menyetujui untuk dihubungi oleh Tono Mardiansyah.
                     </p>
                   </form>
                 )}
