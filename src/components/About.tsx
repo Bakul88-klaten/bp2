@@ -52,7 +52,7 @@ export default function About() {
           </span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Kenali{' '}
-            <span className="text-primary">Rio Mardiansyah</span>
+            <span className="text-primary">Tono</span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
             Mitra asuransi Anda yang siap membantu memberikan solusi perlindungan terbaik 
@@ -77,7 +77,7 @@ export default function About() {
                   <User className="w-10 h-10 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Rio Mardiansyah</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Tono</h3>
                   <p className="text-primary font-medium">Broker Asuransi Profesional</p>
                   <p className="text-sm text-muted-foreground">Dunia Asuransi</p>
                 </div>
