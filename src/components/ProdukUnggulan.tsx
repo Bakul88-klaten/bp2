@@ -182,7 +182,7 @@ export default function ProdukUnggulan() {
                       <Button 
                         variant="outline"
                         className="w-full border-primary text-primary hover:bg-primary/5"
-                        onClick={() => window.open('https://wa.me/628131556592?text=Halo%20Rio,%20saya%20tertarik%20dengan%20Asuransi%20Kargo.%20Mohon%20informasi%20lebih%20lanjut.', '_blank')}
+                        onClick={() => window.open('https://wa.me/628131556592?text=Halo%20Tono,%20saya%20tertarik%20dengan%20Asuransi%20Kargo.%20Mohon%20informasi%20lebih%20lanjut.', '_blank')}
                       >
                         Konsultasi via WhatsApp
                         <ArrowRight className="ml-2 w-4 h-4" />
