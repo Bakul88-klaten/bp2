@@ -6,24 +6,24 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dunia Asuransi - Broker Asuransi Terpercaya | Rio Mardiansyah | Kendaraan, Kebakaran, Kargo, Kecelakaan",
-  description: "Dunia Asuransi adalah layanan broker asuransi profesional oleh Rio Mardiansyah. Menyediakan asuransi kendaraan, asuransi kebakaran, asuransi kargo, dan asuransi kecelakaan dengan pelayanan personal dan proses klaim mudah.",
-  keywords: ["Broker Asuransi", "Agen Asuransi", "Asuransi Indonesia", "Asuransi Kendaraan", "Asuransi Kebakaran", "Asuransi Kargo", "Asuransi Kecelakaan", "Rio Mardiansyah", "Dunia Asuransi", "Klaim Cepat"],
-  authors: [{ name: "Rio Mardiansyah" }],
+  title: "Batam Proteksi - Mitra Asuransi Terpercaya | Sutono | Kendaraan, Kebakaran, Kargo, Kecelakaan",
+  description: "Batam Proteksi adalah layanan Mitra asuransi profesional oleh Sutono. Menyediakan asuransi kendaraan, asuransi kebakaran, asuransi kargo, dan asuransi kecelakaan dengan pelayanan personal dan proses klaim mudah.",
+  keywords: ["Mitra Asuransi", "Agen Asuransi", "Asuransi Indonesia", "Asuransi Kendaraan", "Asuransi Kebakaran", "Asuransi Kargo", "Asuransi Kecelakaan", "Sutono", "Batam Proteksi", "Klaim Cepat"],
+  authors: [{ name: "Sutono" }],
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Dunia Asuransi - Broker Asuransi Terpercaya by Rio Mardiansyah",
-    description: "Solusi asuransi personal untuk kendaraan, properti, kargo, dan diri Anda. Konsultasi gratis dengan Rio Mardiansyah.",
+    title: "Batam Proteksi - Mitra Asuransi Terpercaya by Sutono",
+    description: "Solusi asuransi personal untuk kendaraan, properti, kargo, dan diri Anda. Konsultasi gratis dengan Sutono.",
     url: "https://duniaasuransi.com",
-    siteName: "Dunia Asuransi",
+    siteName: "Batam Proteksi",
     type: "website",
     locale: "id_ID",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dunia Asuransi - Broker Asuransi Terpercaya",
+    title: "Batam Proteksi - Mitra Asuransi Terpercaya",
     description: "Solusi asuransi personal untuk kendaraan, properti, kargo, dan diri Anda.",
   },
   robots: {
