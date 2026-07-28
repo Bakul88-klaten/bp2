@@ -49,8 +49,8 @@ export default function Footer() {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-white">Dunia Asuransi</span>
-                <span className="text-xs text-gray-400 -mt-1">Rio Mardiansyah</span>
+                <span className="text-xl font-bold text-white">Batam Proteksi</span>
+                <span className="text-xs text-gray-400 -mt-1">Tono</span>
               </div>
             </a>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
@@ -168,7 +168,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400 text-center md:text-left">
-            © {new Date().getFullYear()} Dunia Asuransi - Rio Mardiansyah. Broker Asuransi Profesional.
+            © {new Date().getFullYear()} Batam Proteksi - Tono. Praktisi Asuransi Profesional.
           </p>
           <div className="flex gap-6">
             {legal.map((item, index) => (
