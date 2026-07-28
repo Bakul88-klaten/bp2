@@ -14,8 +14,8 @@ const navItems = [
   { label: 'Kontak', href: '#kontak' },
 ]
 
-const whatsappNumber = '628131556592'
-const whatsappDisplay = '0813-1556-592'
+const whatsappNumber = '6287781658231'
+const whatsappDisplay = '0877-8165-8231'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
