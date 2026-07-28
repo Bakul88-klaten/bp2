@@ -152,7 +152,7 @@ export default function KalkulatorKendaraanPopup({ isOpen, onClose }: Kalkulator
                      'Zona 3 (Luar Jawa & Bali)'
     const jaminanText = hasil.jaminan === 'allrisk' ? 'All Risk (Comprehensive)' : 'TLO (Total Loss Only)'
     
-    const pesan = `Halo Rio, saya tertarik untuk mengasuransikan kendaraan saya dengan detail:
+    const pesan = `Halo Tono, saya tertarik untuk mengasuransikan kendaraan saya dengan detail:
 
 *Tipe:* ${hasil.jenis === 'mobil' ? 'Mobil' : 'Motor'}
 *Tahun:* ${hasil.tahun}
