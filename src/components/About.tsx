@@ -29,7 +29,7 @@ const values = [
   },
 ]
 
-const whatsappNumber = '628131556592'
+const whatsappNumber = '6287781658231'
 
 export default function About() {
   const handleWhatsApp = () => {
