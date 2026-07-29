@@ -6,16 +6,16 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Batam Proteksi - Mitra Asuransi Terpercaya di Batam | Sutono | Kendaraan, Kebakaran, Kargo, Kecelakaan",
-  description: "Batam Proteksi adalah layanan Mitra asuransi profesional oleh Sutono. Menyediakan asuransi kendaraan, asuransi kebakaran, asuransi kargo, dan asuransi kecelakaan dengan pelayanan personal dan proses klaim mudah.",
-  keywords: ["Mitra Asuransi", "Agen Asuransi", "Asuransi Indonesia", "Asuransi Kendaraan", "Asuransi Kebakaran", "Asuransi Kargo", "Asuransi Kecelakaan", "Sutono", "Batam Proteksi", "Klaim Cepat"],
-  authors: [{ name: "Sutono" }],
+  title: "Batam Proteksi - Mitra Asuransi Terpercaya di Batam | Tono | Kendaraan, Kebakaran, Kargo, Kecelakaan",
+  description: "Batam Proteksi adalah layanan Mitra asuransi profesional oleh Tono. Menyediakan asuransi kendaraan, asuransi kebakaran, asuransi kargo, dan asuransi kecelakaan dengan pelayanan personal dan proses klaim mudah.",
+  keywords: ["Mitra Asuransi", "Agen Asuransi", "Asuransi Indonesia", "Asuransi Kendaraan", "Asuransi Kebakaran", "Asuransi Kargo", "Asuransi Kecelakaan", "Tono", "Batam Proteksi", "Klaim Cepat"],
+  authors: [{ name: "Tono" }],
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Batam Proteksi - Mitra Asuransi Terpercaya by Sutono",
-    description: "Solusi asuransi personal untuk kendaraan, properti, kargo, dan diri Anda. Konsultasi gratis dengan Sutono.",
+    title: "Batam Proteksi - Mitra Asuransi Terpercaya by Tono",
+    description: "Solusi asuransi personal untuk kendaraan, properti, kargo, dan diri Anda. Konsultasi gratis dengan Tono.",
     url: "https://batamproteksi.biz.id",
     siteName: "Batam Proteksi",
     type: "website",
