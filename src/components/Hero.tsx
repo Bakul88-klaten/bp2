@@ -28,7 +28,7 @@ export default function Hero() {
           alt="Konsultasi Asuransi Profesional"
           fill
           className="object-cover object-center"
-          pTonority
+          priority
         />
       </div>
 
@@ -48,7 +48,7 @@ export default function Hero() {
               className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4 md:mb-6"
             >
               <span className="text-sm font-medium text-primary">
-                Broker Asuransi Profesional
+                Mitra / Praktisi Asuransi Profesional
               </span>
             </motion.div>
 
@@ -101,7 +101,7 @@ export default function Hero() {
               </Button>
               <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 border-primary/20 hover:bg-primary/5" onClick={handleWhatsApp}>
                 <Phone className="mr-2 w-4 h-4 md:w-5 md:h-5" />
-                0813-1556-592
+                0877-8165-8231
               </Button>
             </motion.div>
 

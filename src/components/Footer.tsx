@@ -1,6 +1,7 @@
 'use client'
 
-import { Shield, Phone, Mail, MessageCircle, Instagram, Linkedin, Facebook } from 'lucide-react'
+import { Shield, Phone, Mail, MessageCircle } from 'lucide-react'
+import { InstagramIcon, FacebookIcon, LinkedinIcon } from '@/components/icons/social'
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
 
@@ -23,18 +24,18 @@ const legal = [
   { label: 'Syarat & Ketentuan', href: '#' },
 ]
 
-const whatsappNumber = '628131556592'
-const whatsappDisplay = '0813-1556-592'
+const whatsappNumber = '6287781658231'
+const whatsappDisplay = '0877-8165-8231'
 
 const socialLinks = [
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: InstagramIcon, href: '#', label: 'Instagram' },
+  { icon: FacebookIcon, href: '#', label: 'Facebook' },
+  { icon: LinkedinIcon, href: '#', label: 'LinkedIn' },
 ]
 
 export default function Footer() {
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
+    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
   }
 
   return (
@@ -108,7 +109,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Hubungi Rio</h3>
+            <h3 className="text-white font-semibold mb-4">Hubungi Tono</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MessageCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />

@@ -21,7 +21,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
+    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
   }
 
   return (
@@ -40,7 +40,7 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg md:text-xl font-bold text-primary">Dunia Asuransi</span>
-              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Rio Mardiansyah</span>
+              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Tono Mardiansyah</span>
             </div>
           </a>
 
@@ -83,7 +83,7 @@ export default function Header() {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xl font-bold text-primary">Dunia Asuransi</span>
-                    <span className="text-xs text-muted-foreground">Rio Mardiansyah</span>
+                    <span className="text-xs text-muted-foreground">Tono Mardiansyah</span>
                   </div>
                 </div>
                 <nav className="flex flex-col gap-4">
