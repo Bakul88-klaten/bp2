@@ -38,9 +38,9 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'info@duniaasuransi.com',
+    content: 'tono@batamproteksi.biz.id',
     subContent: 'Respon dalam 24 jam',
-    action: 'mailto:info@duniaasuransi.com',
+    action: 'mailto:tono@batamproteksi.biz.id',
   },
   {
     icon: Clock,
