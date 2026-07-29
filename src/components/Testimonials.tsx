@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Star, Quote } from 'lucide-react'
+import { Quote } from 'lucide-react'
 
 const testimonials = [
   {
@@ -12,7 +12,6 @@ const testimonials = [
     role: 'Pemilik Bisnis',
     location: 'Jakarta',
     content: 'Pak Tono sangat membantu saya memilih asuransi kendaraan yang tepat untuk armada bisnis saya. Pelayanan personal dan sangat responsif. Klaim juga dibantu sampai selesai!',
-    rating: 5,
     initials: 'BS',
   },
   {
@@ -21,7 +20,6 @@ const testimonials = [
     role: 'Ibu Rumah Tangga',
     location: 'Bandung',
     content: 'Senang bisa konsultasi langsung dengan Pak Tono. Penjelasannya sangat mudah dipahami dan tidak ada tekanan untuk langsung beli. Highly recommended!',
-    rating: 5,
     initials: 'SR',
   },
   {
@@ -30,7 +28,6 @@ const testimonials = [
     role: 'Pengusaha Logistik',
     location: 'Surabaya',
     content: 'Sebagai pemilik usaha logistik, asuransi kargo sangat penting. Pak Tono membantu mencari polis yang sesuai dengan kebutuhan bisnis saya dengan premi yang kompetitif.',
-    rating: 5,
     initials: 'AW',
   },
   {
@@ -39,7 +36,6 @@ const testimonials = [
     role: 'Karyawan Swasta',
     location: 'Medan',
     content: 'Proses klaim asuransi kecelakaan saya dibantu langsung oleh Pak Tono dari awal sampai dana cair. Sangat profesional dan bertanggung jawab!',
-    rating: 5,
     initials: 'DK',
   },
   {
@@ -48,7 +44,6 @@ const testimonials = [
     role: 'Dokter',
     location: 'Yogyakarta',
     content: 'Saya sudah merekomendasikan Dunia Asuransi ke keluarga dan teman-teman. Pelayanan dari Pak Tono sangat memuaskan dan selalu siap membantu kapan saja.',
-    rating: 5,
     initials: 'RH',
   },
   {
@@ -57,7 +52,6 @@ const testimonials = [
     role: 'Wiraswasta',
     location: 'Semarang',
     content: 'Pengalaman yang luar biasa! Pak Tono sabar menjelaskan semua detail polis tanpa ada biaya tersembunyi. Semuanya transparan dan profesional.',
-    rating: 5,
     initials: 'LP',
   },
 ]
@@ -123,16 +117,6 @@ export default function Testimonials() {
                   {/* Quote Icon */}
                   <div className="mb-4">
                     <Quote className="w-8 h-8 text-primary/30" />
-                  </div>
-
-                  {/* Rating */}
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
                   </div>
 
                   {/* Content */}
