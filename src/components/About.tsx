@@ -33,7 +33,7 @@ const whatsappNumber = '6287781658231'
 
 export default function About() {
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Rio,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
+    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
   }
 
   return (
