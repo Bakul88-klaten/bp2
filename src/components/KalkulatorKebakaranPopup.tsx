@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Calculator, RefreshCw, MessageCircle, CheckCircle, X, Flame } from 'lucide-react'
 
-const whatsappNumber = '628131556592'
+const whatsappNumber = '6287781658231'
 
 interface KalkulatorKebakaranPopupProps {
   isOpen: boolean
