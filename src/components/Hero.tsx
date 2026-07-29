@@ -59,7 +59,7 @@ export default function Hero() {
               className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-4 md:mb-6"
             >
               Halo, Saya{' '}
-              <span className="text-primary">Tono Mardiansyah</span>
+              <span className="text-primary">Tono</span>
             </motion.h1>
 
             <motion.p

@@ -39,8 +39,8 @@ export default function Header() {
               <Shield className="w-6 h-6 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold text-primary">Dunia Asuransi</span>
-              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Tono Mardiansyah</span>
+              <span className="text-lg md:text-xl font-bold text-primary">Batam Proteksi</span>
+              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Tono</span>
             </div>
           </a>
 
@@ -82,8 +82,8 @@ export default function Header() {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xl font-bold text-primary">Dunia Asuransi</span>
-                    <span className="text-xs text-muted-foreground">Tono Mardiansyah</span>
+                    <span className="text-xl font-bold text-primary">Batam Proteksi</span>
+                    <span className="text-xs text-muted-foreground">Tono</span>
                   </div>
                 </div>
                 <nav className="flex flex-col gap-4">

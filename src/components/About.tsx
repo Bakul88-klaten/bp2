@@ -79,7 +79,7 @@ export default function About() {
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Tono</h3>
                   <p className="text-primary font-medium">Praktisi Asuransi Profesional</p>
-                  <p className="text-sm text-muted-foreground">Dunia Asuransi</p>
+                  <p className="text-sm text-muted-foreground">Batam Proteksi</p>
                 </div>
               </div>
 

@@ -141,10 +141,10 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <a 
-                    href="mailto:info@duniaasuransi.com"
+                    href="mailto:tono@batamproteksi.biz.id"
                     className="text-sm text-white hover:text-primary transition-colors"
                   >
-                    info@duniaasuransi.com
+                    tono@batamproteksi.biz.id
                   </a>
                   <p className="text-xs text-gray-400">Email</p>
                 </div>
