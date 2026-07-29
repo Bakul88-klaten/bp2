@@ -43,7 +43,7 @@ const testimonials = [
     name: 'Rudi Hartono',
     role: 'Dokter',
     location: 'Yogyakarta',
-    content: 'Saya sudah merekomendasikan Dunia Asuransi ke keluarga dan teman-teman. Pelayanan dari Pak Tono sangat memuaskan dan selalu siap membantu kapan saja.',
+    content: 'Saya sudah merekomendasikan Batam Proteksi ke keluarga dan teman-teman. Pelayanan dari Pak Tono sangat memuaskan dan selalu siap membantu kapan saja.',
     initials: 'RH',
   },
   {
@@ -98,7 +98,7 @@ export default function Testimonials() {
           </h2>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
             Dengarkan pengalaman langsung dari klien yang telah mempercayakan 
-            perlindungan mereka melalui Dunia Asuransi.
+            perlindungan mereka melalui Batam Proteksi.
           </p>
         </motion.div>
 
