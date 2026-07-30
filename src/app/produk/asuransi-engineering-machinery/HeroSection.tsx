@@ -57,7 +57,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="relative"
           >
-            <div className="relative bg-white rounded-3xl shadow-xl border border-slate-200 p-8 md:p-10">
+            <div className="relative bg-white rounded-3xl shadow-2xl shadow-slate-400/50 border border-slate-200 p-8 md:p-10">
               <div className="w-20 h-20 bg-slate-700 rounded-2xl flex items-center justify-center mb-6">
                 <Factory className="w-10 h-10 text-white" />
               </div>

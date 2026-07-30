@@ -62,7 +62,9 @@ export default function ProdukHubPage() {
               const inner = (
                 <div
                   className={`h-full p-6 rounded-2xl border-2 ${c.border} ${
-                    p.status === 'live' ? 'hover:shadow-xl hover:-translate-y-1' : 'opacity-75'
+                    p.status === 'live'
+                      ? `shadow-lg ${c.shadow} hover:shadow-2xl hover:-translate-y-1`
+                      : 'opacity-75'
                   } transition-all duration-300 bg-white group`}
                 >
                   <div

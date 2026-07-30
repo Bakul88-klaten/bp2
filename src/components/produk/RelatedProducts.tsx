@@ -31,7 +31,7 @@ export default function RelatedProducts({ currentSlug }: { currentSlug: string }
             const inner = (
               <div
                 className={`h-full p-5 rounded-xl border-2 ${c.border} ${
-                  p.status === 'live' ? 'hover:shadow-lg' : 'opacity-70'
+                  p.status === 'live' ? `shadow-md ${c.shadow} hover:shadow-xl` : 'opacity-70'
                 } transition-shadow bg-white group`}
               >
                 <div className={`w-11 h-11 ${c.bg} rounded-lg flex items-center justify-center mb-3`}>

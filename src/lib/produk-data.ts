@@ -69,11 +69,50 @@ export const produkKategori: ProdukKategori[] = [
   },
 ]
 
-export const warnaClass: Record<WarnaProduk, { bg: string; text: string; border: string }> = {
-  orange: { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-200' },
-  blue: { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-200' },
-  cyan: { bg: 'bg-cyan-50', text: 'text-cyan-600', border: 'border-cyan-200' },
-  purple: { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-200' },
-  teal: { bg: 'bg-teal-50', text: 'text-teal-600', border: 'border-teal-200' },
-  slate: { bg: 'bg-slate-50', text: 'text-slate-600', border: 'border-slate-200' },
+export const warnaClass: Record<
+  WarnaProduk,
+  { bg: string; text: string; border: string; solid: string; shadow: string }
+> = {
+  orange: {
+    bg: 'bg-orange-50',
+    text: 'text-orange-600',
+    border: 'border-orange-200',
+    solid: 'bg-orange-600',
+    shadow: 'shadow-orange-300/60',
+  },
+  blue: {
+    bg: 'bg-blue-50',
+    text: 'text-blue-600',
+    border: 'border-blue-200',
+    solid: 'bg-blue-600',
+    shadow: 'shadow-blue-300/60',
+  },
+  cyan: {
+    bg: 'bg-cyan-50',
+    text: 'text-cyan-600',
+    border: 'border-cyan-200',
+    solid: 'bg-cyan-600',
+    shadow: 'shadow-cyan-300/60',
+  },
+  purple: {
+    bg: 'bg-purple-50',
+    text: 'text-purple-600',
+    border: 'border-purple-200',
+    solid: 'bg-purple-600',
+    shadow: 'shadow-purple-300/60',
+  },
+  teal: {
+    bg: 'bg-teal-50',
+    text: 'text-teal-600',
+    border: 'border-teal-200',
+    solid: 'bg-teal-600',
+    shadow: 'shadow-teal-300/60',
+  },
+  slate: {
+    bg: 'bg-slate-100',
+    text: 'text-slate-700',
+    border: 'border-slate-200',
+    solid: 'bg-slate-700',
+    shadow: 'shadow-slate-400/50',
+  },
 }

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react'
 import KalkulatorKendaraanPopup from './KalkulatorKendaraanPopup'
 import KalkulatorKebakaranPopup from './KalkulatorKebakaranPopup'
+import { produkKategori, warnaClass } from '@/lib/produk-data'
 
 const products = [
   {
@@ -25,6 +26,7 @@ const products = [
     color: 'bg-blue-50',
     iconColor: 'text-blue-600',
     borderColor: 'border-blue-200',
+    shadowColor: 'shadow-blue-300/60',
     features: [
       'Kerusakan akibat kecelakaan',
       'Pencurian dan perampokan',
@@ -42,6 +44,7 @@ const products = [
     color: 'bg-orange-50',
     iconColor: 'text-orange-600',
     borderColor: 'border-orange-200',
+    shadowColor: 'shadow-orange-300/60',
     features: [
       'Kerusakan akibat kebakaran',
       'Kerusakan akibat petir',
@@ -59,6 +62,7 @@ const products = [
     color: 'bg-cyan-50',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-200',
+    shadowColor: 'shadow-cyan-300/60',
     features: [
       'Pengiriman via laut (Marine Cargo)',
       'Pengiriman via udara (Air Cargo)',
@@ -70,6 +74,10 @@ const products = [
     detailHref: '/produk/asuransi-cargo',
   },
 ]
+
+// Kategori batch 2 yang belum punya kartu detail di beranda — ditampilkan ringkas di section "Produk Lainnya"
+const slugSudahDetail = new Set(products.map((p) => p.detailHref.split('/').pop()))
+const produkLainnya = produkKategori.filter((p) => !slugSudahDetail.has(p.slug))
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -138,7 +146,7 @@ export default function ProdukUnggulan() {
           >
             {products.map((product) => (
               <motion.div key={product.id} variants={itemVariants}>
-                <Card className={`h-full hover:shadow-xl transition-all duration-300 border-2 ${product.borderColor} shadow-md group`}>
+                <Card className={`h-full hover:shadow-2xl transition-all duration-300 border-2 ${product.borderColor} shadow-xl ${product.shadowColor} group`}>
                   <CardContent className="p-6">
                     {/* Icon */}
                     <div className={`w-14 h-14 ${product.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
@@ -205,6 +213,62 @@ export default function ProdukUnggulan() {
               </motion.div>
             ))}
           </motion.div>
+
+          {/* Produk Lainnya - kategori batch 2 */}
+          {produkLainnya.length > 0 && (
+            <div className="mt-16 md:mt-20">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="text-center mb-10"
+              >
+                <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary mb-4">
+                  Produk Lainnya
+                </span>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                  Lengkapi Proteksi Usaha Anda
+                </h3>
+              </motion.div>
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
+              >
+                {produkLainnya.map((p) => {
+                  const c = warnaClass[p.warna]
+                  return (
+                    <motion.div key={p.slug} variants={itemVariants} className="h-full">
+                      <Link href={`/produk/${p.slug}`} className="group block h-full">
+                        <div
+                          className={`relative h-full overflow-hidden rounded-3xl bg-white border-2 ${c.border} p-7 shadow-xl ${c.shadow} hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`}
+                        >
+                          <div
+                            className={`absolute -top-8 -left-8 w-28 h-28 ${c.bg} rounded-full blur-xl opacity-80`}
+                          />
+                          <div className="relative z-10">
+                            <div
+                              className={`w-16 h-16 ${c.solid} rounded-2xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                            >
+                              <p.icon className="w-8 h-8 text-white" />
+                            </div>
+                            <h4 className="text-lg font-bold text-gray-900 mb-2">{p.nama}</h4>
+                            <span className={`inline-flex items-center gap-1 text-sm font-semibold ${c.text}`}>
+                              Lihat Detail
+                              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </motion.div>
+                  )
+                })}
+              </motion.div>
+            </div>
+          )}
         </div>
       </section>
 
