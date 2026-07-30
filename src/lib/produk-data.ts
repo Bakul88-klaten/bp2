@@ -47,7 +47,7 @@ export const produkKategori: ProdukKategori[] = [
     deskripsi: 'Tanggung jawab hukum atas tuntutan pihak ketiga akibat operasional usaha Anda.',
     icon: Scale,
     warna: 'purple',
-    status: 'segera',
+    status: 'live',
   },
   {
     slug: 'asuransi-marine',
@@ -56,7 +56,7 @@ export const produkKategori: ProdukKategori[] = [
     deskripsi: 'Perlindungan kapal, tongkang, dan aktivitas pelayaran di perairan Batam & sekitarnya.',
     icon: Anchor,
     warna: 'teal',
-    status: 'segera',
+    status: 'live',
   },
   {
     slug: 'asuransi-engineering-machinery',
@@ -65,7 +65,7 @@ export const produkKategori: ProdukKategori[] = [
     deskripsi: 'Proteksi proyek konstruksi dan mesin produksi di kawasan industri Batam.',
     icon: Cog,
     warna: 'slate',
-    status: 'segera',
+    status: 'live',
   },
 ]
 

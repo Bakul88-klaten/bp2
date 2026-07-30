@@ -2,12 +2,15 @@
 
 import { motion } from 'framer-motion'
 
-type Accent = 'orange' | 'blue' | 'cyan'
+type Accent = 'orange' | 'blue' | 'cyan' | 'purple' | 'teal' | 'slate'
 
 const accentMap: Record<Accent, { bg: string; text: string; line: string }> = {
   orange: { bg: 'bg-orange-600', text: 'text-orange-600', line: 'bg-orange-200' },
   blue: { bg: 'bg-blue-600', text: 'text-blue-600', line: 'bg-blue-200' },
   cyan: { bg: 'bg-cyan-600', text: 'text-cyan-600', line: 'bg-cyan-200' },
+  purple: { bg: 'bg-purple-600', text: 'text-purple-600', line: 'bg-purple-200' },
+  teal: { bg: 'bg-teal-600', text: 'text-teal-600', line: 'bg-teal-200' },
+  slate: { bg: 'bg-slate-600', text: 'text-slate-600', line: 'bg-slate-200' },
 }
 
 interface Step {
