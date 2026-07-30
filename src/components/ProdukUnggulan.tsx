@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -31,6 +32,7 @@ const products = [
       'Pilihan All Risk atau TLO',
     ],
     hasCalculator: true,
+    detailHref: '/produk/asuransi-kendaraan',
   },
   {
     id: 'kebakaran',
@@ -47,6 +49,7 @@ const products = [
       'Perlindungan isi bangunan',
     ],
     hasCalculator: true,
+    detailHref: '/produk/asuransi-properti',
   },
   {
     id: 'kargo',
@@ -64,6 +67,7 @@ const products = [
     ],
     hasCalculator: false,
     extraInfo: 'Asuransi kargo melindungi barang dari risiko kerusakan, kehilangan, atau kerusakan selama proses pengiriman baik melalui laut, udara, maupun darat. Hubungi kami untuk informasi lebih lanjut.',
+    detailHref: '/produk/asuransi-cargo',
   },
 ]
 
@@ -188,6 +192,14 @@ export default function ProdukUnggulan() {
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     )}
+
+                    <Link
+                      href={product.detailHref}
+                      className="mt-3 flex items-center justify-center gap-1 text-sm font-medium text-primary hover:underline"
+                    >
+                      Lihat Detail Lengkap
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
                   </CardContent>
                 </Card>
               </motion.div>

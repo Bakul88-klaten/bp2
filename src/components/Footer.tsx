@@ -1,22 +1,24 @@
 'use client'
 
+import Link from 'next/link'
 import { Shield, Phone, Mail, MessageCircle } from 'lucide-react'
 import { InstagramIcon, FacebookIcon, LinkedinIcon } from '@/components/icons/social'
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
 
 const quickLinks = [
-  { label: 'Beranda', href: '#beranda' },
-  { label: 'Produk', href: '#produk-unggulan' },
-  { label: 'Tentang Saya', href: '#tentang' },
-  { label: 'Testimoni', href: '#testimoni' },
-  { label: 'Kontak', href: '#kontak' },
+  { label: 'Beranda', href: '/#beranda' },
+  { label: 'Produk', href: '/produk' },
+  { label: 'Tentang Saya', href: '/#tentang' },
+  { label: 'Testimoni', href: '/#testimoni' },
+  { label: 'Kontak', href: '/#kontak' },
 ]
 
 const products = [
-  { label: 'Asuransi Kendaraan', href: '#produk-unggulan' },
-  { label: 'Asuransi Kebakaran', href: '#produk-unggulan' },
-  { label: 'Asuransi Kargo', href: '#produk-unggulan' },
+  { label: 'Asuransi Properti', href: '/produk/asuransi-properti' },
+  { label: 'Asuransi Kendaraan', href: '/produk/asuransi-kendaraan' },
+  { label: 'Asuransi Cargo', href: '/produk/asuransi-cargo' },
+  { label: 'Lihat Semua Produk', href: '/produk' },
 ]
 
 const legal = [
@@ -45,7 +47,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <a href="#beranda" className="flex items-center gap-2 mb-4">
+            <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <Shield className="w-6 h-6 text-white" />
               </div>
@@ -53,7 +55,7 @@ export default function Footer() {
                 <span className="text-xl font-bold text-white">Batam Proteksi</span>
                 <span className="text-xs text-gray-400 -mt-1">Tono</span>
               </div>
-            </a>
+            </Link>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
               Partner asuransi terpercaya Anda. Kami siap membantu menemukan 
               perlindungan terbaik untuk kendaraan, properti, bisnis, dan diri Anda 
@@ -79,12 +81,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -96,12 +98,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {products.map((product, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={product.href}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {product.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

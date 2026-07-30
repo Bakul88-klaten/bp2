@@ -1,17 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu, Shield, Phone } from 'lucide-react'
 
 const navItems = [
-  { label: 'Beranda', href: '#beranda' },
-  { label: 'Produk', href: '#produk-unggulan' },
-  { label: 'Tentang Saya', href: '#tentang' },
-  { label: 'Testimoni', href: '#testimoni' },
-  { label: 'Kontak', href: '#kontak' },
+  { label: 'Beranda', href: '/#beranda' },
+  { label: 'Produk', href: '/produk' },
+  { label: 'Tentang Saya', href: '/#tentang' },
+  { label: 'Testimoni', href: '/#testimoni' },
+  { label: 'Kontak', href: '/#kontak' },
 ]
 
 const whatsappNumber = '6287781658231'
@@ -34,7 +35,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#beranda" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <Shield className="w-6 h-6 text-white" />
             </div>
@@ -42,18 +43,18 @@ export default function Header() {
               <span className="text-lg md:text-xl font-bold text-primary">Batam Proteksi</span>
               <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Tono</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -88,14 +89,14 @@ export default function Header() {
                 </div>
                 <nav className="flex flex-col gap-4">
                   {navItems.map((item) => (
-                    <a
+                    <Link
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
                       className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
                 <div className="flex flex-col gap-3 pt-4 border-t">
