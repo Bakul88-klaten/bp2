@@ -13,7 +13,7 @@ export default function KeyPointsBox({
   const c = warnaClass[warna]
 
   return (
-    <div className={`rounded-2xl ${c.bg} border ${c.border} p-6 md:p-7`}>
+    <div className={`rounded-2xl ${c.bg} border ${c.border} p-6 md:p-7 shadow-xl ${c.shadow} hover:shadow-2xl transition-shadow duration-300`}>
       <h3 className="font-bold text-foreground text-base md:text-lg mb-4">{title}</h3>
       <ul className="space-y-3">
         {items.map((item, i) => (

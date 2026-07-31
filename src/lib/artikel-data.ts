@@ -87,6 +87,16 @@ export const artikelSilo: ArtikelSilo[] = [
     deskripsi:
       'Tiga contoh kasus tuntutan pihak ketiga terhadap usaha di Batam dan bagaimana asuransi liability berperan.',
   },
+  {
+    slug: 'public-liability-subcon-proyek-kapal-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan',
+    judul:
+      'Asuransi Public Liability untuk Subcon Proyek Kapal di Batam: Berapa Nilai Pertanggungan yang Ideal?',
+    judulSingkat: 'Public Liability Subcon Proyek Kapal',
+    deskripsi:
+      'Panduan Public Liability untuk subkontraktor pengerjaan bagian kapal di Batam, termasuk gambaran nilai pertanggungan Rp 3 miliar.',
+  },
 
   // ===== Asuransi Marine =====
   {

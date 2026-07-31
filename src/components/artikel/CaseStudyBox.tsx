@@ -16,7 +16,7 @@ export default function CaseStudyBox({
   const c = warnaClass[warna]
 
   return (
-    <div className={`rounded-2xl border-2 ${c.border} bg-white p-6 md:p-7`}>
+    <div className={`rounded-2xl border-2 ${c.border} bg-white p-6 md:p-7 shadow-xl ${c.shadow} hover:shadow-2xl transition-shadow duration-300`}>
       <div className="flex items-center gap-2 mb-3">
         <div className={`w-9 h-9 rounded-lg ${c.bg} flex items-center justify-center flex-shrink-0`}>
           <Lightbulb className={`w-4.5 h-4.5 ${c.text}`} />

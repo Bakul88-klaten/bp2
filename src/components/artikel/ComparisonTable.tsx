@@ -28,7 +28,7 @@ export default function ComparisonTable({
       {title && (
         <h3 className="text-lg md:text-xl font-bold text-foreground mb-4">{title}</h3>
       )}
-      <div className={`rounded-2xl border ${c.border} overflow-hidden bg-white`}>
+      <div className={`rounded-2xl border ${c.border} overflow-hidden bg-white shadow-xl ${c.shadow}`}>
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent border-b-0">

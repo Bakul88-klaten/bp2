@@ -15,19 +15,21 @@ export default function ArticleCrossLinks({
   const c = warnaClass[warna]
   const produk = produkKategori.find((p) => p.slug === produkSlug)
   const siblings = artikelSiblings(produkSlug, currentSlug)
+  const totalCards = 1 + siblings.length
+  const gridClass = totalCards >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'
 
   if (!produk) return null
 
   return (
     <section className="py-14 md:py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-3xl">
+      <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 text-center">
           Lanjutkan Membaca dalam Topik Asuransi {produk.namaSingkat}
         </h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className={`grid ${gridClass} gap-4`}>
           <Link
             href={`/produk/${produk.slug}`}
-            className={`group p-5 rounded-xl border-2 ${c.border} bg-white hover:shadow-lg transition-shadow`}
+            className={`group p-5 rounded-xl border-2 ${c.border} bg-white shadow-md ${c.shadow} hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`}
           >
             <span className={`inline-flex items-center gap-1.5 text-xs font-medium ${c.text} mb-2`}>
               <BookOpen className="w-3.5 h-3.5" />
@@ -47,7 +49,7 @@ export default function ArticleCrossLinks({
             <Link
               key={a.slug}
               href={`/produk/${produkSlug}/${a.slug}`}
-              className={`group p-5 rounded-xl border-2 ${c.border} bg-white hover:shadow-lg transition-shadow`}
+              className={`group p-5 rounded-xl border-2 ${c.border} bg-white shadow-md ${c.shadow} hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`}
             >
               <span className={`inline-flex items-center gap-1.5 text-xs font-medium ${c.text} mb-2`}>
                 <FileText className="w-3.5 h-3.5" />

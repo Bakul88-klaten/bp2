@@ -18,6 +18,9 @@ export default function RelatedArtikel({
 
   if (artikel.length === 0) return null
 
+  const gridClass = artikel.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'
+  const maxWidthClass = artikel.length >= 3 ? 'max-w-5xl' : 'max-w-3xl'
+
   return (
     <section className="py-14 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -35,7 +38,7 @@ export default function RelatedArtikel({
             Pelajari lebih dalam sebelum menentukan pilihan polis Anda.
           </p>
         </motion.div>
-        <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+        <div className={`grid ${gridClass} gap-5 ${maxWidthClass} mx-auto`}>
           {artikel.map((a, i) => (
             <motion.div
               key={a.slug}
@@ -46,7 +49,7 @@ export default function RelatedArtikel({
             >
               <Link
                 href={`/produk/${produkSlug}/${a.slug}`}
-                className={`group block h-full p-5 rounded-xl border-2 ${c.border} bg-white hover:shadow-lg transition-shadow`}
+                className={`group block h-full p-5 rounded-xl border-2 ${c.border} bg-white shadow-md ${c.shadow} hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`}
               >
                 <span className={`inline-flex items-center gap-1.5 text-xs font-medium ${c.text} mb-2`}>
                   <FileText className="w-3.5 h-3.5" />
