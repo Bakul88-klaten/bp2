@@ -125,6 +125,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="hull-machinery-vs-protection-indemnity"
+            variant="header"
             warna="teal"
             aspect="wide"
             label="Foto kapal niaga/tongkang di perairan Batam atau ilustrasi dua jenis proteksi kapal"

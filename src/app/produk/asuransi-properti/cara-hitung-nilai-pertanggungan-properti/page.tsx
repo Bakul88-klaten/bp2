@@ -108,6 +108,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="cara-hitung-nilai-pertanggungan-properti"
+            variant="header"
             warna="orange"
             aspect="wide"
             label="Foto ruko/gudang di Batam atau infografis komponen nilai pertanggungan"

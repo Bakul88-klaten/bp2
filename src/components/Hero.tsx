@@ -19,7 +19,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="beranda" className="relative min-h-screen flex items-center pt-16 md:pt-20">
+    <section id="beranda" className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80 z-10" />
@@ -134,7 +134,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="hidden lg:flex items-center justify-center"
           >
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-lg overflow-hidden rounded-3xl">
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3" />
               <div className="absolute inset-0 bg-primary/5 rounded-3xl transform -rotate-3" />
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border border-primary/10">

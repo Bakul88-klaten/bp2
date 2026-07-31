@@ -124,6 +124,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="perbandingan-jenis-asuransi-liability"
+            variant="header"
             warna="purple"
             aspect="wide"
             label="Foto area usaha dengan akses publik (restoran/ruko) di Batam atau ilustrasi tiga jenis liability"

@@ -130,6 +130,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="flexas-vs-property-all-risk"
+            variant="header"
             warna="orange"
             aspect="wide"
             label="Foto pabrik/gudang di kawasan industri Batam atau ilustrasi perbandingan dua polis"

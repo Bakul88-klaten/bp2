@@ -37,7 +37,7 @@ export default function About() {
   }
 
   return (
-    <section id="tentang" className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-white">
+    <section id="tentang" className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div

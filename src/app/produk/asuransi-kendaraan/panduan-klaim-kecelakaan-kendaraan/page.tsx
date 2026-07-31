@@ -125,6 +125,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="panduan-klaim-kecelakaan-kendaraan"
+            variant="header"
             warna="blue"
             aspect="wide"
             label="Foto kondisi lalu lintas Batam atau ilustrasi dokumentasi kecelakaan"
@@ -163,6 +165,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="panduan-klaim-kecelakaan-kendaraan"
+            variant="inline"
             warna="blue"
             aspect="video"
             label="Foto dokumentasi kecelakaan (kronologi, STNK, lokasi) sebagai ilustrasi langkah klaim"

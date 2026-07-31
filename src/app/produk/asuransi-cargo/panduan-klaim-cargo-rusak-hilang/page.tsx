@@ -125,6 +125,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="panduan-klaim-cargo-rusak-hilang"
+            variant="header"
             warna="cyan"
             aspect="wide"
             label="Foto kontainer/gudang transit di Pelabuhan Batu Ampar atau ilustrasi proses klaim"

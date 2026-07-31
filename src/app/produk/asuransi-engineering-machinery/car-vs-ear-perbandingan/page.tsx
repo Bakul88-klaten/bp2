@@ -125,6 +125,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="car-vs-ear-perbandingan"
+            variant="header"
             warna="slate"
             aspect="wide"
             label="Foto proyek konstruksi/instalasi mesin di kawasan industri Batam atau ilustrasi perbandingan CAR-EAR"

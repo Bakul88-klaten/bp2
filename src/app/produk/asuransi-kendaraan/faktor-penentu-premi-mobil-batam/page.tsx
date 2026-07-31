@@ -130,6 +130,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="faktor-penentu-premi-mobil-batam"
+            variant="header"
             warna="blue"
             aspect="wide"
             label="Foto mobil pribadi/armada usaha di jalan Batam atau infografis faktor premi"

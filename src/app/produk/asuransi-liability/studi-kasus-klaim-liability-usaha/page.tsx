@@ -123,6 +123,8 @@ export default function ArtikelPage() {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <ArticleImageSlot
+            articleSlug="studi-kasus-klaim-liability-usaha"
+            variant="header"
             warna="purple"
             aspect="wide"
             label="Foto area kerja/proyek di kawasan industri Batam atau ilustrasi proses penyelesaian klaim"
