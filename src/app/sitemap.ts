@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { produkKategori } from '@/lib/produk-data'
+import { artikelSilo } from '@/lib/artikel-data'
 
 const SITE_URL = 'https://batamproteksi.biz.id'
 
@@ -28,5 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }))
 
-  return [...staticRoutes, ...productRoutes]
+  const artikelRoutes: MetadataRoute.Sitemap = artikelSilo.map((a) => ({
+    url: `${SITE_URL}/produk/${a.produkSlug}/${a.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  return [...staticRoutes, ...productRoutes, ...artikelRoutes]
 }

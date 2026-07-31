@@ -5,6 +5,7 @@ import ProductBreadcrumb from '@/components/produk/ProductBreadcrumb'
 import ExpertBox from '@/components/produk/ExpertBox'
 import FAQSection from '@/components/produk/FAQSection'
 import RelatedProducts from '@/components/produk/RelatedProducts'
+import RelatedArtikel from '@/components/produk/RelatedArtikel'
 import CTABanner from '@/components/produk/CTABanner'
 import JsonLd from '@/components/produk/JsonLd'
 import { breadcrumbSchema, insuranceServiceSchema } from '@/lib/schema'
@@ -220,6 +221,8 @@ export default function AsuransiCargoPage() {
           <ExpertBox lastUpdated="30 Juli 2026" />
         </div>
       </section>
+
+      <RelatedArtikel produkSlug="asuransi-cargo" warna="cyan" />
 
       <FAQSection
         title="Pertanyaan Seputar Asuransi Cargo"
