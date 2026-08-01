@@ -8,7 +8,7 @@ import RelatedProducts from '@/components/produk/RelatedProducts'
 import RelatedArtikel from '@/components/produk/RelatedArtikel'
 import CTABanner from '@/components/produk/CTABanner'
 import JsonLd from '@/components/produk/JsonLd'
-import { breadcrumbSchema, insuranceServiceSchema } from '@/lib/schema'
+import { breadcrumbSchema, insuranceServiceSchema, faqSchema } from '@/lib/schema'
 import {
   Flame,
   Zap,
@@ -173,6 +173,9 @@ export default function AsuransiPropertiPage() {
           path: PATH,
           serviceType: 'Asuransi Properti',
         })}
+      />
+      <JsonLd
+        data={faqSchema(faqItems)}
       />
       <Header />
       <ProductBreadcrumb

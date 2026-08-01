@@ -8,7 +8,7 @@ import RelatedProducts from '@/components/produk/RelatedProducts'
 import RelatedArtikel from '@/components/produk/RelatedArtikel'
 import CTABanner from '@/components/produk/CTABanner'
 import JsonLd from '@/components/produk/JsonLd'
-import { breadcrumbSchema, insuranceServiceSchema } from '@/lib/schema'
+import { breadcrumbSchema, insuranceServiceSchema, faqSchema } from '@/lib/schema'
 import { HardHat, Cpu, Gauge, Truck, CircuitBoard, Scale, TrendingDown } from 'lucide-react'
 import HeroSection from './HeroSection'
 import ProcessSteps from '../_shared/ProcessSteps'
@@ -122,6 +122,9 @@ export default function AsuransiEngineeringMachineryPage() {
           path: PATH,
           serviceType: 'Asuransi Engineering & Machinery',
         })}
+      />
+      <JsonLd
+        data={faqSchema(faqItems)}
       />
       <Header />
       <ProductBreadcrumb

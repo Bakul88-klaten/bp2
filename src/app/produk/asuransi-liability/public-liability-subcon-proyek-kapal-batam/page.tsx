@@ -13,7 +13,7 @@ import CaseStudyBox from '@/components/artikel/CaseStudyBox'
 import KeyPointsBox from '@/components/artikel/KeyPointsBox'
 import CoverageList from '@/components/artikel/CoverageList'
 import ArticleCrossLinks from '@/components/artikel/ArticleCrossLinks'
-import { breadcrumbSchema, articleSchema } from '@/lib/schema'
+import { breadcrumbSchema, articleSchema, faqSchema } from '@/lib/schema'
 import { ShieldCheck } from 'lucide-react'
 
 const PATH = '/produk/asuransi-liability/public-liability-subcon-proyek-kapal-batam'
@@ -100,6 +100,9 @@ export default function ArtikelPage() {
           datePublished: '2026-08-01',
           dateModified: '2026-08-01',
         })}
+      />
+      <JsonLd
+        data={faqSchema(faqItems)}
       />
       <Header />
       <ProductBreadcrumb

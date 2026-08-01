@@ -12,7 +12,7 @@ import ComparisonTable from '@/components/artikel/ComparisonTable'
 import CaseStudyBox from '@/components/artikel/CaseStudyBox'
 import KeyPointsBox from '@/components/artikel/KeyPointsBox'
 import ArticleCrossLinks from '@/components/artikel/ArticleCrossLinks'
-import { breadcrumbSchema, articleSchema } from '@/lib/schema'
+import { breadcrumbSchema, articleSchema, faqSchema } from '@/lib/schema'
 import { HardHat } from 'lucide-react'
 
 const PATH = '/produk/asuransi-engineering-machinery/car-vs-ear-perbandingan'
@@ -102,6 +102,9 @@ export default function ArtikelPage() {
           datePublished: '2026-07-31',
           dateModified: '2026-07-31',
         })}
+      />
+      <JsonLd
+        data={faqSchema(faqItems)}
       />
       <Header />
       <ProductBreadcrumb
