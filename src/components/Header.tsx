@@ -1,118 +1,71 @@
-'use client'
-
-import { useState } from 'react'
+import fs from 'node:fs'
+import path from 'node:path'
+import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu, Shield, Phone } from 'lucide-react'
+import { Shield } from 'lucide-react'
+import HeaderActions from '@/components/HeaderActions'
+import { navItems } from '@/lib/nav-items'
 
-const navItems = [
-  { label: 'Beranda', href: '/#beranda' },
-  { label: 'Produk', href: '/produk' },
-  { label: 'Tentang Saya', href: '/#tentang' },
-  { label: 'Testimoni', href: '/#testimoni' },
-  { label: 'Kontak', href: '/#kontak' },
-]
-
-const whatsappNumber = '6287781658231'
-const whatsappDisplay = '0877-8165-8231'
+/**
+ * Logo gambar (opsional): /public/logo.png
+ * Selama file belum ada, header memakai lockup ikon + wordmark seperti sekarang.
+ * Begitu logo.png diunggah ke /public, header otomatis memakainya — tanpa ubah kode.
+ */
+function hasLogoImage() {
+  return fs.existsSync(path.join(process.cwd(), 'public', 'logo.png'))
+}
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Halo%20Tono,%20saya%20ingin%20konsultasi%20tentang%20asuransi`, '_blank')
-  }
+  const hasLogo = hasLogoImage()
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primary/10 shadow-sm"
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 shadow-sm animate-in fade-in slide-in-from-top-4 duration-500"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <Shield className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold text-primary">Batam Proteksi</span>
-              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Tono</span>
-            </div>
+          <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            {hasLogo ? (
+              <Image
+                src="/logo.png"
+                alt="Batam Proteksi"
+                width={168}
+                height={48}
+                priority
+                className="h-9 md:h-11 w-auto object-contain"
+              />
+            ) : (
+              <>
+                <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/30">
+                  <Shield className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                </div>
+                <div className="flex flex-col leading-none">
+                  <span className="text-lg md:text-xl font-bold text-primary tracking-tight">
+                    Batam Proteksi
+                  </span>
+                  <span className="text-[10px] md:text-xs text-muted-foreground mt-1">Tono</span>
+                </div>
+              </>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="px-4 py-2 text-sm font-medium text-foreground/75 hover:text-primary hover:bg-primary/5 rounded-full transition-colors"
               >
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button variant="ghost" className="text-primary" onClick={handleWhatsApp}>
-              <Phone className="w-4 h-4 mr-2" />
-              {whatsappDisplay}
-            </Button>
-            <Button className="bg-primary hover:bg-primary/90" onClick={handleWhatsApp}>
-              Konsultasi Gratis
-            </Button>
-          </div>
-
-          {/* Mobile Menu */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="flex flex-col gap-6 mt-8">
-                <div className="flex items-center gap-2 pb-4 border-b">
-                  <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-xl font-bold text-primary">Batam Proteksi</span>
-                    <span className="text-xs text-muted-foreground">Tono</span>
-                  </div>
-                </div>
-                <nav className="flex flex-col gap-4">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </nav>
-                <div className="flex flex-col gap-3 pt-4 border-t">
-                  <Button variant="outline" className="w-full justify-start" onClick={handleWhatsApp}>
-                    <Phone className="w-4 h-4 mr-2" />
-                    {whatsappDisplay}
-                  </Button>
-                  <Button className="w-full bg-primary hover:bg-primary/90" onClick={handleWhatsApp}>
-                    Konsultasi Gratis via WhatsApp
-                  </Button>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+          <HeaderActions hasLogo={hasLogo} />
         </div>
       </div>
-    </motion.header>
+    </header>
   )
 }
