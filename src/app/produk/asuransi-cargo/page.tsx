@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description: 'Perlindungan barang kiriman laut, udara, dan darat dari dan menuju Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

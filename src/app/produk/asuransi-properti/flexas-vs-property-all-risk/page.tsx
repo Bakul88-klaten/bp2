@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Perbandingan cakupan FLEXAS dan Property All Risk untuk properti di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

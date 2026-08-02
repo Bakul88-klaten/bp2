@@ -31,6 +31,7 @@ export const metadata: Metadata = {
       'Panduan Public Liability untuk subcon proyek kapal di Batam, termasuk gambaran nilai pertanggungan Rp 3 miliar.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

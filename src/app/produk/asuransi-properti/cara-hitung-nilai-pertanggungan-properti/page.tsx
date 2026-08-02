@@ -29,6 +29,7 @@ export const metadata: Metadata = {
       'Panduan menghitung nilai pertanggungan properti di Batam agar klaim tidak dipotong prinsip average.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Yang perlu diperhatikan pemilik kapal saat kapal direparasi di galangan Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

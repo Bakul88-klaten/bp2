@@ -98,13 +98,53 @@ export function articleSchema({
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.svg`,
+        url: `${SITE_URL}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_URL}${path}`,
     },
+  }
+}
+
+export function organizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'InsuranceAgency',
+    name: 'Batam Proteksi',
+    url: SITE_URL,
+    logo: `${SITE_URL}/android-chrome-512x512.png`,
+    image: `${SITE_URL}/og-image.png`,
+    telephone: '+6287781658231',
+    email: 'tono@batamproteksi.biz.id',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Batam',
+      addressRegion: 'Kepulauan Riau',
+      addressCountry: 'ID',
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Batam',
+    },
+    founder: {
+      '@type': 'Person',
+      name: 'Tono',
+      jobTitle: 'Praktisi Asuransi Profesional',
+    },
+  }
+}
+
+export function websiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Batam Proteksi',
+    url: SITE_URL,
+    inLanguage: 'id-ID',
   }
 }
 

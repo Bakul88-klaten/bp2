@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Contoh kasus klaim liability usaha di Batam dan peran asuransi di dalamnya.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

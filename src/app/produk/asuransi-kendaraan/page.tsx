@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description: 'Asuransi mobil dan motor All Risk maupun TLO untuk warga dan pelaku usaha di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

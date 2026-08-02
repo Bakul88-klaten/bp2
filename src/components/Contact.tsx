@@ -66,33 +66,37 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  const buildWhatsAppMessage = () =>
+    `Halo Tono, saya ingin konsultasi tentang asuransi.\n\nNama: ${formData.nama || '-'}\nEmail: ${formData.email || '-'}\nTelepon: ${formData.telepon || '-'}\nPesan: ${formData.pesan || '-'}`
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
+    // Catatan: /api/contact saat ini hanya mencatat submission di server log
+    // (belum tersambung ke email/database). Agar pesan calon nasabah TIDAK
+    // pernah hilang, jalur pengiriman utama tetap lewat WhatsApp — sama
+    // seperti tombol "Langsung ke WhatsApp".
     try {
-      const response = await fetch('/api/contact', {
+      await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       })
-
-      if (response.ok) {
-        setIsSubmitted(true)
-        setFormData({ nama: '', email: '', telepon: '', pesan: '' })
-      }
     } catch (error) {
       console.error('Error submitting form:', error)
     } finally {
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(buildWhatsAppMessage())}`, '_blank')
+      setIsSubmitted(true)
+      setFormData({ nama: '', email: '', telepon: '', pesan: '' })
       setIsSubmitting(false)
     }
   }
 
   const handleWhatsAppDirect = () => {
-    const message = `Halo Tono, saya ingin konsultasi tentang asuransi.\n\nNama: ${formData.nama || '-'}\nEmail: ${formData.email || '-'}\nTelepon: ${formData.telepon || '-'}\nPesan: ${formData.pesan || '-'}`
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank')
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(buildWhatsAppMessage())}`, '_blank')
   }
 
   return (

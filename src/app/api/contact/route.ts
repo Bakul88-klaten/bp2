@@ -22,12 +22,12 @@ export async function POST(request: Request) {
       )
     }
 
-    // Here you would typically:
-    // 1. Save to database
-    // 2. Send email notification
-    // 3. Send to WhatsApp API
-    
-    // For now, just return success
+    // Endpoint ini sengaja hanya mencatat submission (belum ada database
+    // atau email service terhubung). Pengiriman lead yang sebenarnya
+    // dilakukan oleh client lewat redirect ke WhatsApp (lihat Contact.tsx),
+    // jadi endpoint ini tidak menjadi satu-satunya jalur pesan.
+    // TODO: sambungkan ke database/email/WhatsApp Business API jika ingin
+    // menyimpan histori lead di luar WhatsApp.
     console.log('Contact form submission:', { nama, email, telepon, pesan })
 
     return NextResponse.json(

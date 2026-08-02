@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Perbedaan Hull & Machinery dan P&I untuk kapal yang beroperasi dari Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

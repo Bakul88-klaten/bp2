@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description: 'Proteksi proyek konstruksi dan mesin produksi di kawasan industri Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

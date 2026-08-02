@@ -5,6 +5,7 @@ import { Shield, Phone, Mail, MessageCircle } from 'lucide-react'
 import { InstagramIcon, FacebookIcon, LinkedinIcon } from '@/components/icons/social'
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
+import { produkKategori } from '@/lib/produk-data'
 
 const quickLinks = [
   { label: 'Beranda', href: '/#beranda' },
@@ -14,21 +15,27 @@ const quickLinks = [
   { label: 'Kontak', href: '/#kontak' },
 ]
 
+// Diambil dari produkKategori (sumber data yang sama dengan sitemap) agar
+// setiap kategori produk live otomatis punya link dari footer, tanpa perlu
+// diperbarui manual saat ada kategori baru.
 const products = [
-  { label: 'Asuransi Properti', href: '/produk/asuransi-properti' },
-  { label: 'Asuransi Kendaraan', href: '/produk/asuransi-kendaraan' },
-  { label: 'Asuransi Cargo', href: '/produk/asuransi-cargo' },
+  ...produkKategori
+    .filter((p) => p.status === 'live')
+    .map((p) => ({ label: p.nama, href: `/produk/${p.slug}` })),
   { label: 'Lihat Semua Produk', href: '/produk' },
 ]
 
 const legal = [
-  { label: 'Kebijakan Privasi', href: '#' },
-  { label: 'Syarat & Ketentuan', href: '#' },
+  { label: 'Kebijakan Privasi', href: '/kebijakan-privasi' },
+  { label: 'Syarat & Ketentuan', href: '/syarat-ketentuan' },
 ]
 
 const whatsappNumber = '6287781658231'
 const whatsappDisplay = '0877-8165-8231'
 
+// TODO: ganti '#' dengan URL profil resmi begitu akun media sosial Batam
+// Proteksi/Tono tersedia. Sebelum itu, ikon ini tidak mengarah ke tujuan
+// nyata dan sebaiknya tidak dipasang sebagai link aktif.
 const socialLinks = [
   { icon: InstagramIcon, href: '#', label: 'Instagram' },
   { icon: FacebookIcon, href: '#', label: 'Facebook' },

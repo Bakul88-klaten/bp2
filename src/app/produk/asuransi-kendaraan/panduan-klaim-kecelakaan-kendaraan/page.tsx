@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Panduan klaim kecelakaan tunggal, ganda, dan kehilangan kendaraan di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

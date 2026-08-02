@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       'Pilih perlindungan yang sesuai kebutuhan Anda di Batam: properti, kendaraan, cargo, dan lainnya.',
     url: 'https://batamproteksi.biz.id/produk',
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Panduan klaim cargo rusak, basah, atau hilang di Pelabuhan Batu Ampar.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description: 'Perlindungan kapal dan aktivitas pelayaran di perairan Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

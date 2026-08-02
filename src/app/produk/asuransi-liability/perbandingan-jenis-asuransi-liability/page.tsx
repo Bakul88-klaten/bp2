@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     description: 'Perbandingan tiga jenis utama asuransi liability untuk usaha di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

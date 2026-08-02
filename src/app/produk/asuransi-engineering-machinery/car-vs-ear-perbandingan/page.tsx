@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Perbandingan CAR dan EAR untuk proyek konstruksi dan instalasi mesin di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

@@ -39,6 +39,7 @@ export const metadata: Metadata = {
       'Proteksi rumah, ruko, gudang, dan pabrik Anda di Batam dari risiko kebakaran dan bencana.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

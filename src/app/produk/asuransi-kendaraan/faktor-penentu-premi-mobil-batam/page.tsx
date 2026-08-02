@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Faktor penentu premi asuransi mobil All Risk dan TLO di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Perbandingan cakupan ICC A, B, dan C untuk kargo dari dan menuju Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 

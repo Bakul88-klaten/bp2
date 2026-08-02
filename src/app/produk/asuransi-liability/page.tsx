@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description: 'Proteksi tanggung jawab hukum bagi pelaku usaha di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'website',
+    images: ['/og-image.png'],
   },
 }
 

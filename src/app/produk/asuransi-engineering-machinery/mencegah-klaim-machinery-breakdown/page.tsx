@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description: 'Penyebab, pencegahan, dan cara klaim machinery breakdown untuk pabrik di Batam.',
     url: `https://batamproteksi.biz.id${PATH}`,
     type: 'article',
+    images: ['/og-image.png'],
   },
 }
 
