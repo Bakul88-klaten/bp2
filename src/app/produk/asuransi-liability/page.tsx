@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ProductBreadcrumb from '@/components/produk/ProductBreadcrumb'
@@ -9,7 +10,7 @@ import RelatedArtikel from '@/components/produk/RelatedArtikel'
 import CTABanner from '@/components/produk/CTABanner'
 import JsonLd from '@/components/produk/JsonLd'
 import { breadcrumbSchema, insuranceServiceSchema, faqSchema } from '@/lib/schema'
-import { Users, HardHat, PackageSearch, Briefcase } from 'lucide-react'
+import { Users, HardHat, PackageSearch, Briefcase, ArrowRight } from 'lucide-react'
 import HeroSection from './HeroSection'
 import ProcessSteps from '../_shared/ProcessSteps'
 
@@ -29,11 +30,17 @@ export const metadata: Metadata = {
   },
 }
 
-const jenisLiability = [
+const jenisLiability: {
+  icon: typeof Users
+  title: string
+  desc: string
+  href?: string
+}[] = [
   {
     icon: Users,
     title: 'Public Liability',
     desc: 'Tanggung jawab hukum atas cedera atau kerugian pihak ketiga yang terjadi di lokasi usaha Anda, seperti ruko, restoran, atau area pabrik.',
+    href: '/produk/asuransi-liability/asuransi-public-liability-batam',
   },
   {
     icon: HardHat,
@@ -176,18 +183,36 @@ export default function AsuransiLiabilityPage() {
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {jenisLiability.map((item) => (
-              <div
-                key={item.title}
-                className="p-6 bg-white rounded-2xl border-2 border-purple-100 hover:border-purple-300 hover:shadow-lg transition-all"
-              >
-                <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-purple-600" />
+            {jenisLiability.map((item) =>
+              item.href ? (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="group p-6 bg-white rounded-2xl border-2 border-purple-200 hover:border-purple-400 hover:shadow-lg transition-all"
+                >
+                  <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-purple-600">
+                    Baca Panduan Lengkap
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              ) : (
+                <div
+                  key={item.title}
+                  className="p-6 bg-white rounded-2xl border-2 border-purple-100 hover:border-purple-300 hover:shadow-lg transition-all"
+                >
+                  <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
-                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>

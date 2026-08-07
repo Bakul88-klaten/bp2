@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ProductBreadcrumb from '@/components/produk/ProductBreadcrumb'
@@ -150,7 +151,11 @@ export default function ArtikelPage() {
             Ketiganya sama-sama masuk kategori asuransi tanggung jawab hukum, tetapi memiliki
             pemicu klaim (trigger) yang berbeda. Memilih jenis yang tepat — atau kombinasi
             keduanya — akan menentukan apakah usaha Anda benar-benar terlindungi saat menghadapi
-            tuntutan.
+            tuntutan. Untuk Public Liability secara khusus, tersedia{' '}
+            <Link href="/produk/asuransi-liability/asuransi-public-liability-batam" className="text-primary underline">
+              panduan lengkapnya di sini
+            </Link>
+            , termasuk gambaran limit berdasarkan jenis usaha.
           </p>
         </div>
       </section>

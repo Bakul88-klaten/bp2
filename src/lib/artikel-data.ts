@@ -70,6 +70,15 @@ export const artikelSilo: ArtikelSilo[] = [
 
   // ===== Asuransi Liability =====
   {
+    slug: 'asuransi-public-liability-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan Utama',
+    judul: 'Asuransi Public Liability Batam: Panduan Lengkap Cakupan, Premi, dan Klaim',
+    judulSingkat: 'Asuransi Public Liability Batam',
+    deskripsi:
+      'Panduan lengkap Public Liability untuk pelaku usaha di Batam — apa yang dijamin, gambaran premi, dan cara memilih nilai pertanggungan yang tepat.',
+  },
+  {
     slug: 'perbandingan-jenis-asuransi-liability',
     produkSlug: 'asuransi-liability',
     kategori: 'Perbandingan',
@@ -96,6 +105,42 @@ export const artikelSilo: ArtikelSilo[] = [
     judulSingkat: 'Public Liability Subcon Proyek Kapal',
     deskripsi:
       'Panduan Public Liability untuk subkontraktor pengerjaan bagian kapal di Batam, termasuk gambaran nilai pertanggungan Rp 3 miliar.',
+  },
+  {
+    slug: 'public-liability-restoran-kafe-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan',
+    judul: 'Asuransi Public Liability untuk Restoran & Kafe di Batam: Kenapa Penting?',
+    judulSingkat: 'Public Liability Restoran & Kafe',
+    deskripsi:
+      'Risiko tanggung jawab hukum yang sering terlewat pemilik restoran dan kafe di Batam, dari lantai licin hingga insiden di dapur terbuka.',
+  },
+  {
+    slug: 'public-liability-ruko-toko-ritel-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan',
+    judul: 'Asuransi Public Liability untuk Ruko & Toko Ritel di Batam',
+    judulSingkat: 'Public Liability Ruko & Toko Ritel',
+    deskripsi:
+      'Perlindungan tanggung jawab hukum untuk pemilik ruko dan toko ritel di Batam dari risiko cedera pengunjung dan kerusakan properti tetangga.',
+  },
+  {
+    slug: 'public-liability-pabrik-kawasan-industri-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan',
+    judul: 'Asuransi Public Liability untuk Pabrik di Kawasan Industri Batam',
+    judulSingkat: 'Public Liability Pabrik & Kawasan Industri',
+    deskripsi:
+      'Perlindungan tanggung jawab hukum saat buyer, auditor, atau tamu asing cedera selama kunjungan ke pabrik di Batamindo, Kabil, dan Panbil.',
+  },
+  {
+    slug: 'public-liability-event-pameran-batam',
+    produkSlug: 'asuransi-liability',
+    kategori: 'Panduan',
+    judul: 'Asuransi Public Liability untuk Event & Pameran di Batam',
+    judulSingkat: 'Public Liability Event & Pameran',
+    deskripsi:
+      'Kenapa pengelola gedung dan venue di Batam kerap mensyaratkan Public Liability sebelum event atau pameran boleh berlangsung.',
   },
 
   // ===== Asuransi Marine =====
