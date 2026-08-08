@@ -205,22 +205,24 @@ export default function ArtikelPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Contoh Kasus</h2>
           <CaseStudyBox
             warna="purple"
-            title="Auditor Asing Terpeleset Saat Plant Tour di Pabrik Kawasan Kabil"
+            title="Buyer Asing Tersandung Selang Produksi Saat Kunjungan ke Pabrik di Batamindo"
           >
             <p>
-              Sebuah pabrik manufaktur ekspor di kawasan Kabil kedatangan tim auditor dari mitra
-              buyer luar negeri untuk melakukan compliance audit tahunan. Rombongan diajak
-              meninjau langsung area lini produksi sebagai bagian dari proses audit.
+              Sebuah pabrik manufaktur ekspor di kawasan Batamindo kedatangan rombongan buyer
+              dari luar negeri untuk meninjau kesiapan produksi sebelum penandatanganan kontrak
+              tahunan. Rombongan diajak berkeliling melewati beberapa titik lini produksi.
             </p>
             <p>
-              Saat berjalan melewati salah satu titik lini produksi, lantai dalam kondisi sedikit
-              licin akibat sisa cairan proses yang belum sepenuhnya dibersihkan. Salah satu
-              anggota tim auditor terpeleset dan mengalami cedera pada pergelangan kaki.
+              Di salah satu titik, selang udara bertekanan untuk peralatan produksi melintang di
+              jalur jalan tanpa pelindung kabel (cable protector). Salah satu anggota rombongan
+              buyer tersandung selang tersebut saat berjalan sambil memperhatikan mesin produksi,
+              terjatuh, dan mengalami cedera pada pergelangan tangan.
             </p>
             <p className="font-medium text-foreground">
-              Karena pabrik memiliki Public Liability, biaya penanganan medis dan proses
-              komunikasi dengan pihak buyer terkait insiden ini dapat ditangani secara profesional
-              — membantu menjaga hubungan kerja sama dengan buyer tetap berjalan baik.
+              Karena pabrik memiliki Public Liability, biaya penanganan medis dan komunikasi
+              dengan pihak buyer terkait insiden ini dapat ditangani secara profesional. Pabrik
+              juga menambahkan pelindung kabel di seluruh jalur kunjungan tamu setelah kejadian
+              ini sebagai langkah pencegahan.
             </p>
           </CaseStudyBox>
         </div>

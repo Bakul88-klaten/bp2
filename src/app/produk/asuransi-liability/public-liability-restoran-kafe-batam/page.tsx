@@ -201,22 +201,24 @@ export default function ArtikelPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Contoh Kasus</h2>
           <CaseStudyBox
             warna="purple"
-            title="Pelanggan Terpeleset di Dekat Wastafel Kafe Area Nagoya"
+            title="Percikan Minyak Panas dari Dapur Terbuka Mengenai Pengunjung di Kafe Batam Center"
           >
             <p>
-              Sebuah kafe dengan konsep outdoor seating di kawasan Nagoya cukup ramai dikunjungi
-              saat akhir pekan. Suatu malam, lantai dekat area wastafel basah akibat tumpahan air
-              yang belum sempat dikeringkan staf karena kondisi sedang ramai.
+              Sebuah kafe dengan konsep open kitchen di kawasan Batam Center menempatkan meja
+              pengunjung tepat berhadapan dengan area memasak sebagai daya tarik konsepnya. Saat
+              jam sibuk akhir pekan, minyak panas dari wajan memercik cukup jauh saat staf dapur
+              sedang menggoreng dalam volume besar.
             </p>
             <p>
-              Seorang pelanggan terpeleset saat berjalan menuju toilet, mengalami cedera pada
-              pergelangan tangan, dan memerlukan penanganan medis. Pelanggan tersebut kemudian
-              mengajukan tuntutan ganti rugi biaya pengobatan kepada pemilik kafe.
+              Percikan tersebut mengenai lengan seorang pengunjung yang duduk di meja terdekat,
+              menyebabkan luka bakar ringan yang memerlukan penanganan medis. Pengunjung mengajukan
+              tuntutan biaya pengobatan kepada pemilik kafe, dengan alasan jarak meja yang terlalu
+              dekat dengan area masak tanpa pembatas pelindung.
             </p>
             <p className="font-medium text-foreground">
-              Karena kafe memiliki polis Public Liability, biaya pengobatan dan proses negosiasi
-              ganti rugi ditangani oleh pihak asuransi, sehingga operasional kafe tetap berjalan
-              normal tanpa menanggung beban finansial mendadak.
+              Karena kafe memiliki polis Public Liability, biaya pengobatan pengunjung ditangani
+              asuransi. Pemilik kafe kemudian menambahkan panel pelindung kaca di sisi dapur
+              terbuka untuk mencegah insiden serupa terulang.
             </p>
           </CaseStudyBox>
         </div>
